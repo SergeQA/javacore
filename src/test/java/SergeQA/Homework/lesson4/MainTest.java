@@ -28,7 +28,7 @@ public class MainTest {
         double e = 15;
         double f = 1.5;
         double expRes = 22.5;
-        Assert.assertEquals(expRes, Main.multiplyNumerals(e, f));
+        Assert.assertEquals(expRes, Main.multiplyNumerals(e, f), 0.00000);
     }
 
     @Test
@@ -36,7 +36,7 @@ public class MainTest {
         double g = 23;
         double h = 2;
         double expRes = 11.5;
-        Assert.assertEquals(expRes, Main.divideNumerals(g, h));
+        Assert.assertEquals(expRes, Main.divideNumerals(g, h),0.000000001);
     }
 
     @Test
@@ -44,7 +44,7 @@ public class MainTest {
         double i = 2;
         double j = 4;
         double expRes = 16;
-        Assert.assertEquals(expRes, Main.degreeNumerals(i, j));
+        Assert.assertEquals(expRes, Main.degreeNumerals(i, j), 0.00000);
     }
 
     @Test
@@ -58,7 +58,7 @@ public class MainTest {
     public void rootNumeralsTest(){
         int l = 1156;
         int expRes = 34;
-        Assert.assertEquals(expRes, Main.rootNumerals(l));
+        Assert.assertEquals(expRes, Main.rootNumerals(l), 0.00000);
     }
 
     @Test
@@ -67,7 +67,7 @@ public class MainTest {
         int n = 4;
         int o = 5;
 //        int expRes == int o;
-        Assert.assertEquals(o, Main.nRootNumerals(m, n));
+        Assert.assertEquals(o, Main.nRootNumerals(m, n), 0.00000);
     }
 
 }
