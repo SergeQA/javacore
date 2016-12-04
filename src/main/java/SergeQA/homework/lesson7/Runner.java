@@ -13,10 +13,10 @@ public class Runner {
         System.out.println("To print array of even numbers from 2 to 20 in line press 1");
         System.out.println("To print array of even numbers from 2 to 20 in column press 2");
         System.out.println("To print array of uneven numbers from 1 to 99 in increasing order press 3");
-        System.out.println("To print array of uneven numers from 99 to 1 in decreasing order press 4");
+        System.out.println("To print array of uneven numbers from 99 to 1 in decreasing order press 4");
 
-        int a = scan.nextInt();
-
+        int task = scan.nextInt();
+/*
         if (a == 1){
             evenArrayLine();
         } else if (a == 2){
@@ -25,6 +25,24 @@ public class Runner {
             unevenArrayIncreasing();
         } else if (a == 4){
             unevenArrayDecreasing();
+        }
+*/
+
+        switch (task){
+            case 1: EvenArray.evenArrayLine();
+            break;
+
+            case 2: EvenArray.evenArrayColumn();
+            break;
+
+            case 3: UnevenArray.unevenArrayIncreasing();
+            break;
+
+            case 4: UnevenArray.unevenArrayDecreasing();
+            break;
+
+            default: System.out.println("ERROR!");
+
         }
 
 
