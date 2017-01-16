@@ -1,7 +1,15 @@
 package SergeQA.homework.lesson15;
 
-/**
- * Created by user on 1/16/2017.
- */
-public class BicycleWithRing {
+
+public class BicycleWithRing extends CustomBicycle implements BicycleWithRingInterface {
+
+    public BicycleWithRing(String name) {
+        super(name);
+    }
+
+    public void ring(){
+        System.out.println("Di-ling!");
+    }
+
+
 }
